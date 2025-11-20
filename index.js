@@ -37,7 +37,7 @@ class SteamAuth {
         "https://steamcommunity.com/openid",
         false,
         (error, authUrl) => {
-          if (error) return reject("Authentication failed: " + error);
+          if (error) return reject("Authentication failed: " + ((typeof error === 'string' || typeof error === "number") ? error : JSON.stringify(error)));
           if (!authUrl) return reject("Authentication failed.");
 
           resolve(authUrl);
