@@ -4,9 +4,8 @@
 name: CI / Publish to NPM
 
 on:
-  push:
-    branches:
-      - master
+  release:
+    types: [published]
 
 jobs:
   npm-publish:
