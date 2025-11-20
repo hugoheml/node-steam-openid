@@ -1,7 +1,7 @@
-# node-steam-openid
+# @hugoheml/node-steam-openid
 
-[![npm version](https://badge.fury.io/js/node-steam-openid.svg)](https://badge.fury.io/js/node-steam-openid)
-![npm ci](https://github.com/LeeviHalme/node-steam-openid/actions/workflows/npm-publish.yml/badge.svg)
+[![npm version](https://badge.fury.io/js/@hugoheml/node-steam-openid.svg)](https://badge.fury.io/js/@hugoheml/node-steam-openid)
+![npm ci](https://github.com/hugoheml/node-steam-openid/actions/workflows/npm-publish.yml/badge.svg)
 
 A lightweight wrapper package around Steam's Authentication API, which supports promises :)
 
@@ -11,12 +11,12 @@ A lightweight wrapper package around Steam's Authentication API, which supports 
 
 ## Usage
 
-Install the package by typing `npm i node-steam-openid` in your project folder.
+Install the package by typing `npm i @hugoheml/node-steam-openid` in your project folder.
 
 ### Setup
 
 ```javascript
-const SteamAuth = require("node-steam-openid");
+const SteamAuth = require("@hugoheml/node-steam-openid");
 
 const steam = new SteamAuth({
   realm: "http://localhost:5000", // Site name displayed to users on logon
